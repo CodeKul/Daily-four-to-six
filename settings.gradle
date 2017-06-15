@@ -1,1 +1,1 @@
-include ':app', ':mylibrary', ':ui', ':viewproperties', ':interactivitycomm', ':compoundview', ':customview', ':viewanimations', ':listview', ':gridview', ':activitylifecycle'
+include ':app', ':mylibrary', ':ui', ':viewproperties', ':interactivitycomm', ':compoundview', ':customview', ':viewanimations', ':listview', ':gridview', ':activitylifecycle', ':activitystatemanagement'
