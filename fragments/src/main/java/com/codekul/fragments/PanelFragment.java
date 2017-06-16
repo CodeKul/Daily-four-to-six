@@ -27,21 +27,21 @@ public class PanelFragment extends Fragment {
         view.findViewById(R.id.btnBike).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ((MainActivity)getActivity()).loadFragment(new BoyFragment());
             }
         });
 
         view.findViewById(R.id.btnPlane).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ((MainActivity)getActivity()).loadFragment(new PlaneFragment());
             }
         });
 
         view.findViewById(R.id.btnTruck).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ((MainActivity)getActivity()).loadFragment(new TruckFragment());
             }
         });
 

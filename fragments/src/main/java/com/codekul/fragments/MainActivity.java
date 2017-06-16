@@ -1,5 +1,6 @@
 package com.codekul.fragments;
 
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        loadFragment(new ImageFragment());
+    }
+
+    public void loadFragment(Fragment fragment) {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction txn = manager.beginTransaction();
-        txn.add(R.id.frameContainer, new ImageFragment());
+        txn.replace(R.id.frameContainer, fragment);
         txn.commit();
     }
 }
