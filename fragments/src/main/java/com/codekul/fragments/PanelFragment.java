@@ -27,21 +27,27 @@ public class PanelFragment extends Fragment {
         view.findViewById(R.id.btnBike).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).loadFragment(new BoyFragment());
+                ImageFragment fragment = new ImageFragment(); //bad
+                Bundle bundle = new Bundle();
+                bundle.putInt(ImageFragment.KEY_IMG, R.drawable.ic_boy);
+                fragment.setArguments(bundle); //imp
+                ((MainActivity)getActivity()).loadFragment(fragment);
             }
         });
 
         view.findViewById(R.id.btnPlane).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).loadFragment(new PlaneFragment());
+                //((MainActivity)getActivity()).loadFragment(new PlaneFragment());
+                ((MainActivity)getActivity()).loadFragment(ImageFragment.getInstance(R.drawable.ic_rocket));
             }
         });
 
         view.findViewById(R.id.btnTruck).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).loadFragment(new TruckFragment());
+                //((MainActivity)getActivity()).loadFragment(new TruckFragment());
+                ((MainActivity)getActivity()).loadFragment(ImageFragment.getInstance(R.drawable.ic_buses));
             }
         });
 
