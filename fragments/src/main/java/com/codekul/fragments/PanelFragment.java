@@ -18,7 +18,6 @@ public class PanelFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -53,5 +52,4 @@ public class PanelFragment extends Fragment {
 
         return view;
     }
-
 }
