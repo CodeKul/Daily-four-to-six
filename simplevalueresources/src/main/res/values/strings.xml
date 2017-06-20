@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimpleValueResources</string>
+    <string name="hello">My World</string>
+
+    <string-array name="os">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Rim</item>
+        <item>Windows</item>
+        <item>Palm</item>
+        <item>Tizen</item>
+    </string-array>
+</resources>
