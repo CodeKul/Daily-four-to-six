@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dialogs</string>
+    <string name="dialogTitle">Title</string>
+    <string name="dialogMessage">Message</string>
+    <string name="etOtp">OTP</string>
+    <string name="btnVerify">Verify</string>
 </resources>

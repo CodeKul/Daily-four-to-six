@@ -14,7 +14,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onAlert(View view) {
+        appDialog(AppDialog.TAG_ALERT);
+    }
 
+    public void onDate(View view) {
+        appDialog(AppDialog.TAG_DATE);
+    }
+
+    public void onTime(View view) {
+        appDialog(AppDialog.TAG_TIME);
+    }
+
+    public void onProgress(View view) {
+        appDialog(AppDialog.TAG_PROGRESS);
+    }
+
+    public void onCustom(View view) {
+        appDialog(AppDialog.TAG_CUSTOM);
+    }
+
+    private void alert() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this);
 
@@ -28,19 +47,8 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    public void onDate(View view) {
-
-    }
-
-    public void onTime(View view) {
-
-    }
-
-    public void onProgres(View view) {
-
-    }
-
-    public void onCustom(View view) {
-
+    private void appDialog(String tag) {
+        AppDialog dialog = new AppDialog();
+        dialog.show(getSupportFragmentManager(), tag);
     }
 }
