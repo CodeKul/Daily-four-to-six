@@ -59,12 +59,7 @@ public class AppDialog extends DialogFragment {
                         mt("No");
                     }
                 })
-                .setNeutralButton("Okay", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mt("Okay");
-                    }
-                });
+                .setNeutralButton(R.string.btnVerify, null);
 
         return builder.create();
     }
