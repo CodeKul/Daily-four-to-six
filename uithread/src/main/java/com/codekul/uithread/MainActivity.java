@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onOkay(View view) {
-        new MyTask(
-                (TextView) findViewById(R.id.txtCnts)
-        ).execute(0, 100);
+
     }
 
 
@@ -63,53 +61,5 @@ public class MainActivity extends AppCompatActivity {
         }).start();
     }
 
-    private class MyTask extends AsyncTask<Integer/*Params*/, Integer, Boolean/*Result*/> {
 
-        private TextView textCntr;
-        private ProgressDialog pd;
-
-        MyTask(TextView textCntr) {
-            this.textCntr = textCntr;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            // UI thread
-
-            pd = ProgressDialog.show(MainActivity.this, "Title", "Message");
-        }
-
-        @Override
-        protected Boolean doInBackground(Integer... integers/*Params*/) {
-
-            // worker thread
-
-            for (int i = integers[0]; i < integers[1]; i++) {
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                publishProgress(i);
-            }
-            return true;
-        }
-
-        @Override
-        protected void onPostExecute(Boolean aBoolean/*result*/) {
-            super.onPostExecute(aBoolean);
-
-            //ui thread
-
-            pd.dismiss();
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-            // ui thread
-            textCntr.setText(String.valueOf(values[0]));
-        }
-    }
 }
