@@ -24,8 +24,10 @@
             <option value="$PROJECT_DIR$/handleconfigurationchange2" />
             <option value="$PROJECT_DIR$/intentsandintentfilters" />
             <option value="$PROJECT_DIR$/interactivitycomm" />
+            <option value="$PROJECT_DIR$/internalstorage" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/mylibrary" />
+            <option value="$PROJECT_DIR$/sharedprefs" />
             <option value="$PROJECT_DIR$/simplevalueresources" />
             <option value="$PROJECT_DIR$/statusbarnotifications" />
             <option value="$PROJECT_DIR$/toast" />
