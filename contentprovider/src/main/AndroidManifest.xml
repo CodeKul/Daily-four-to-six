@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.melayer.sqlite">
+    package="com.melayer.contentprovider">
 
     <application
         android:allowBackup="true"
@@ -16,12 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name=".DbProvider"
-            android:authorities="com.codekul.custom.provider"
-            android:enabled="true"
-            android:exported="true"></provider>
     </application>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
 </manifest>
