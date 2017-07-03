@@ -1,0 +1,17 @@
+{
+  "name": "android",
+  "devices": 70,
+  "types": [
+    "Touch",
+    "No Touch",
+    "QWERTY",
+    "Roller"
+  ],
+  "details": {
+    "company": "CodeKul",
+    "techs": [
+      "Android",
+      "iOS"
+    ]
+  }
+}
