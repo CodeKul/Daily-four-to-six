@@ -32,13 +32,17 @@
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/locations" />
             <option value="$PROJECT_DIR$/maps" />
+            <option value="$PROJECT_DIR$/matbasic" />
+            <option value="$PROJECT_DIR$/materialbasics" />
             <option value="$PROJECT_DIR$/mylibrary" />
+            <option value="$PROJECT_DIR$/navdrawer" />
             <option value="$PROJECT_DIR$/runtimepermissions" />
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/sharedprefs" />
             <option value="$PROJECT_DIR$/simplevalueresources" />
             <option value="$PROJECT_DIR$/sqlite" />
             <option value="$PROJECT_DIR$/statusbarnotifications" />
+            <option value="$PROJECT_DIR$/swipe" />
             <option value="$PROJECT_DIR$/toast" />
             <option value="$PROJECT_DIR$/ui" />
             <option value="$PROJECT_DIR$/uithread" />
